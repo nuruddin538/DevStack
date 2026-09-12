@@ -42,20 +42,39 @@ const Technologies = ({ technologiesPromise }: TechnologiesProps) => {
   };
   // Remove one technology
   const handleRemoveFromStack = (id: string) => {
+    const technology = selectedTechnologies.find((item) => item.id === id);
     setSelectedTechnologies((prev) => prev.filter((item) => item.id !== id));
+    if (technology) {
+      toast.info(`${technology.name} remove from stack!`, {
+        position: "top-center",
+        autoClose: 2500,
+        theme: "light",
+        transition: Bounce,
+      });
+    }
   };
+
   // Remove all technologies
   const handleRemoveAll = () => {
+    if (selectedTechnologies.length === 0) {
+      return;
+    }
     setSelectedTechnologies([]);
+    toast.info("All technologies removed from stack!", {
+      position: "top-center",
+      autoClose: 2500,
+      theme: "light",
+      transition: Bounce,
+    });
   };
   return (
-    <div className="bg-[#f8fafc] py-16">
-      <div className="container mx-auto px-4">
+    <div id="technologies" className="bg-[#f8fafc] py-16">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-10">
-          <h2 className="text-3xl font-extrabold text-slate-900 sm:text-4xl">
+          <h2 className="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">
             Explore The <span className="text-fuchsia-600">Technologies</span>
           </h2>
-          <p className="mt-3 text-slate-500">
+          <p className="mt-3 text-slate-500 text-sm sm:text-base">
             Pick one technology per category to build your ideal stack
           </p>
         </div>
