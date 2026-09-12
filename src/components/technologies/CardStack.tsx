@@ -3,7 +3,7 @@ import type { ITechnology } from "../../types/technology";
 
 interface CardStackProps {
   selectedTechnologies: ITechnology[];
-  noRemove: (id: string) => void;
+  onRemove: (id: string) => void;
   onRemoveAll: () => void;
 }
 const CardStack = ({
