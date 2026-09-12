@@ -68,7 +68,7 @@ const CardStack = ({
                     type="button"
                     onClick={() => onRemove(technology.id)}
                     className="text-slate-300 transition hover:text-red-500"
-                    aria-lebel={`Remove ${technology.name}`}
+                    aria-label={`Remove ${technology.name}`}
                   >
                     <X className="h-4 w-4" />
                   </button>

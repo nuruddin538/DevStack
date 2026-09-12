@@ -1,3 +1,4 @@
+import footerLogo from "../assets/logo-text.png";
 const Footer = () => {
   return (
     <div className="border-t border-slate-100 bg-white">
@@ -6,14 +7,7 @@ const Footer = () => {
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-[1.7fr_1fr_1fr_1fr] lg:gap-8">
           {/* Brand */}
           <div>
-            <a href="#home" className="inline-flex items-center gap-2">
-              <span className="flex h-6 w-6 items-center justify-center rounded-md bg-gradient-to-br from-orange-400 to-fuchsia-600 text-[9px] font-bold text-white">
-                DS
-              </span>
-              <span className="text-base font-bold text-slate-800">
-                Dev<span className="text-pink-500">Stack</span>
-              </span>
-            </a>
+            <img src={footerLogo} alt="footer logo" />
             <p className="mt-4 max-w-xs leading-5 text-slate-400">
               Curated tools, technologies, and resources for developers building
               modern software.
