@@ -6,7 +6,7 @@ DevStack is a modern and responsive web application that help users explore popu
 
 ## 🌐 Live Demo
 
-🔗 [Live Site](https://dev-stack-6gcb7k4sg-md-nur-uddins-projects.vercel.app/)
+🔗 [Live Site](https://dev-stack-dc2uoo5os-md-nur-uddins-projects.vercel.app/)
 
 ## 📂 Github Repository
 
