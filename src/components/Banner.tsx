@@ -4,7 +4,7 @@ import banner from "../assets/banner-stack.png";
 const Banner = () => {
   return (
     <section id="home" className="overflow-hidden bg-white">
-      <div className="mx-auto grid max-w-7xl items-center px-5 pt-10 sm:px-8 sm:pt-16 md:pt-20 lg:grid-cols-2 lg:gap-10 lg:px-10 lg:py-24">
+      <div className="mx-auto grid max-w-7xl items-center px-5 pt-5 sm:px-8 sm:pt-16 md:pt-20 lg:grid-cols-2 lg:gap-10 lg:px-10 lg:py-24">
         {/* Left Content */}
         <div className="text-center lg:text-left">
           {/* Heading */}
