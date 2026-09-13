@@ -81,7 +81,7 @@ const Technologies = ({ technologiesPromise }: TechnologiesProps) => {
         {/* Grid + Sidebar */}
         <div className="grid items-start gap-8 lg:grid-cols-[1fr_300px]">
           {/* Technology Cards */}
-          <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
+          <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
             {technologies.map((technology) => {
               const isAdded = selectedTechnologies.some(
                 (item) => item.id === technology.id
